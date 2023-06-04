@@ -16,6 +16,13 @@ const rpc = AsyncCall({}, {
   ipcMain.handle(command, (event, ...args) => rpc[command](...args))
 })
 
+ipcMain.handle('old-a-plus-b', async (_, a, b) => {
+  for (let i = 0; i < 1e10; i++) {
+
+  }
+  return a + b;
+})
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,

@@ -1,3 +1,8 @@
 module.exports = {
-  "com.calculator.aPlusB": (a, b) => a + b
+  "com.calculator.aPlusB": async (a, b) => {
+    for (let i = 0; i < 1e10; i++) {
+
+    }
+    return a + b;
+  }
 }
