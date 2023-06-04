@@ -10,7 +10,11 @@ const rpc = AsyncCall({}, {
   )
 })
 
-ipcMain.handle('aPlusB', (event, ...args) => rpc.aPlusB(...args))
+;[
+  ...require('./plugins/calculator/package.json').commands
+].forEach(command => {
+  ipcMain.handle(command, (event, ...args) => rpc[command](...args))
+})
 
 const createWindow = () => {
   const win = new BrowserWindow({

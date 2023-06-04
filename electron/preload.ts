@@ -2,5 +2,6 @@ import { contextBridge, ipcRenderer } from 'electron'
 
 contextBridge.exposeInMainWorld('apis', {
   // bypass
-  aPlusB: (...args) => ipcRenderer.invoke('aPlusB', ...args)
+  'com.calculator.aPlusB': (...args) => ipcRenderer.invoke(
+    'com.calculator.aPlusB', ...args)
 })

@@ -1,10 +1,6 @@
 const { AsyncCall } = require('async-call-rpc')
 const { MessagePortChannel } = require('./utils')
 
-AsyncCall({
-  aPlusB: (a, b) => {
-    return a + b
-  }
-}, {
+AsyncCall(require('./plugins/calculator/index.js'), {
   channel: new MessagePortChannel(require('node:worker_threads').parentPort)
 })

@@ -13,7 +13,7 @@
 <script type="module">
   document.getElementById('button').addEventListener('click', async () => {
     console.log('click')
-    document.getElementById('content').innerText = await window.apis.aPlusB(1, 2)
+    document.getElementById('content').innerText = await window.apis['com.calculator.aPlusB'](1, 2)
   })
 </script>
 </html>
