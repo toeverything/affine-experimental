@@ -1,0 +1,12 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  async-call-rpc:
+    specifier: ^6.3.1
+    version: 6.3.1
+
+packages:
+
+  /async-call-rpc@6.3.1:
+    resolution: {integrity: sha512-i9R46goYZIi0WPkd5X12O6rOsA1GFUiZ/71GOafdQaZtbytXjQ6VevODXDu5hAI5vn2/BQqbC6NznHV+TAC1QA==}
+    dev: false

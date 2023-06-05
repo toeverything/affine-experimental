@@ -1,0 +1,7 @@
+{
+  "name": "worker_thread",
+  "private": true,
+  "dependencies": {
+    "async-call-rpc": "^6.3.1"
+  }
+}
