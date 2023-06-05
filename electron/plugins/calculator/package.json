@@ -1,9 +1,4 @@
 {
   "name": "calculator",
-  "version": "1.0.0",
-  "commands": [
-    "com.calculator.aPlusB"
-  ],
-  "dependencies": {
-  }
+  "type": "module"
 }

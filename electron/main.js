@@ -10,10 +10,13 @@ const rpc = AsyncCall({}, {
   )
 })
 
-;[
-  ...require('./plugins/calculator/package.json').commands
-].forEach(command => {
-  ipcMain.handle(command, (event, ...args) => rpc[command](...args))
+// register plugin
+import('./plugins/calculator/index.js').then(({
+  default: module
+}) => {
+  module.commands.forEach(command => {
+    ipcMain.handle(command, (event, ...args) => rpc[command](...args))
+  })
 })
 
 ipcMain.handle('old-a-plus-b', async (_, a, b) => {
