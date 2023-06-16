@@ -1,0 +1,4 @@
+{
+  "name": "@affine-plugin/hello-world",
+  "module": "./dist/index.js"
+}

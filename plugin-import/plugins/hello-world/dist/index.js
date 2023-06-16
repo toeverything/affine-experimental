@@ -1,0 +1,1 @@
+(()=>{"use strict";(0,AffinePluginInfra.definePlugin)({id:"test"})})();
