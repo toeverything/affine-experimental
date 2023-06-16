@@ -4,7 +4,7 @@ globalThis.AffinePluginInfra = {
   }
 }
 
-import('http://localhost:3000/hello-world/dist/index.js')
+import('http://localhost:3000/hello-world/index.js')
 .then(() => {
   console.log('success')
 })
